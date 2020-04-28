@@ -56,7 +56,7 @@ Header.defaultProps = {
     showLogo: true,
 }
 
-export default StyleSheet.create({
+const styles = StyleSheet.create({
     grid: {
         backgroundColor: 'white',
         height: 89,
