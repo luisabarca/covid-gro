@@ -1,0 +1,19 @@
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <!-- For React Native Hot-reloading system -->
+        <!-- If you are running on a device insert your computer IP -->
+        <domain includeSubdomains="true">localhost</domain>
+        <domain includeSubdomains="true">10.0.2.2</domain>
+        <domain includeSubdomains="true">10.0.1.1</domain>
+        <domain includeSubdomains="true">citig.mx</domain>
+        <domain includeSubdomains="true">www.citig.mx</domain>
+        <domain includeSubdomains="true">www.bplus.mx</domain>
+        <domain includeSubdomains="true">bplus.mx</domain>
+        <trust-anchors>
+            <certificates src="system" />
+            <certificates src="user" />
+        </trust-anchors>
+    </domain-config>
+
+    <base-config cleartextTrafficPermitted="true" />
+</network-security-config>
